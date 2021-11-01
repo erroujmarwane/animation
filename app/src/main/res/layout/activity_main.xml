@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+<ImageView
+android:id="@+id/image"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:src="@drawable/character"
+    android:layout_gravity="center_horizontal"
+    android:layout_margin="20dp"
+    android:contentDescription="@string/app_name" />
+
+    <ScrollView
+        android:layout_width="392dp"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp">
+
+                <Button
+                    android:id="@+id/buttomZoomIn"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="8dp"
+                    android:background="@drawable/button_ripple"
+                    android:fontFamily="@font/poppins"
+                    android:text="@string/zoom_in"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/buttomZoomOut"
+                    android:layout_width="182dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/button_ripple"
+                    android:fontFamily="@font/poppins"
+                    android:text="@string/zoom_out"
+                    android:textColor="@color/white" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="394dp"
+                android:layout_height="match_parent"
+                android:paddingBottom="8dp">
+
+                <Button
+                    android:id="@+id/buttomFadeIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/button_ripple"
+                    android:fontFamily="@font/poppins"
+                    android:text="@string/fade_in"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/buttomFadeOut"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/button_ripple"
+                    android:fontFamily="@font/poppins"
+                    android:text="@string/fade_out"
+                    android:textColor="@color/white" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp">
+
+                <Button
+                    android:id="@+id/buttomSlideLeft"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/button_ripple"
+                    android:fontFamily="@font/poppins"
+                    android:text="@string/slide_left"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/buttomSlideRight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/button_ripple"
+                    android:fontFamily="@font/poppins"
+                    android:text="@string/slide_right"
+                    android:textColor="@color/white" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp">
+
+                <Button
+                    android:id="@+id/buttomSlideUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/button_ripple"
+                    android:fontFamily="@font/poppins"
+                    android:text="@string/slide_up"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/buttomSlideDown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/button_ripple"
+                    android:fontFamily="@font/poppins"
+                    android:text="@string/slide_down"
+                    android:textColor="@color/white" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp">
+
+                <Button
+                    android:id="@+id/buttomZoomInFadeIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/button_ripple"
+                    android:fontFamily="@font/poppins"
+                    android:text="@string/zoom_in_fade_in"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/buttomZoomOutFadeOut"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/button_ripple"
+                    android:fontFamily="@font/poppins"
+                    android:text="@string/zoom_out_fade_out"
+                    android:textColor="@color/white" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp">
+
+                <Button
+                    android:id="@+id/buttomRotate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/button_ripple"
+                    android:fontFamily="@font/poppins"
+                    android:text="@string/rotate"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/buttomMove"
+                    android:layout_width="152dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/button_ripple"
+                    android:fontFamily="@font/poppins"
+                    android:text="@string/move"
+                    android:textColor="@color/white" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+</LinearLayout>
